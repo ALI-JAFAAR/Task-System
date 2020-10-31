@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^creative.easebiz\.biz [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://creative.easebiz.biz/$1 [R,L]
